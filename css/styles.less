@@ -1,0 +1,85 @@
+@blue-color: #53b8e9;
+@green-color: #96e264;
+
+body {
+    padding-top: 80px;
+}
+
+.top-shadow {
+    background-image: url(../img/shadow-bottom.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    padding-bottom: 20px;
+}
+
+.step-container {
+    padding: 60px 0;
+}
+
+.footer {
+    background-color: #F2F2F2;
+
+    li {
+        list-style-type: none;
+    }
+
+    li.active > a {
+        font-weight: bold;
+    }
+}
+
+.blue {
+    color: @blue-color;
+}
+
+.green {
+    color: @green-color;
+}
+
+.navbar {
+    border-bottom: 0;
+    border-radius: 0px !important;
+    margin-bottom: 0;
+    opacity: 0.9;
+
+    .special {
+        background-color: @green-color !important;
+        background-image: -webkit-gradient(linear, 0 100%, 0 0, from(@green-color), to(darken(@green-color, 30%)));
+        background-image: -webkit-linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+        background-image: -moz-linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+        background-image: -o-linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+        background-image: linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+        background-repeat: repeat-x;
+
+        a {
+            color: #E8E8E8 !important;
+
+            &:hover {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    // font-size: 4
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: @green-color !important;
+    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(@green-color), to(darken(@green-color, 30%)));
+    background-image: -webkit-linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+    background-image: -moz-linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+    background-image: -o-linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+    background-image: linear-gradient(@green-color 0%, darken(@green-color, 30%) 100%);
+    background-repeat: repeat-x;
+}
+
+
